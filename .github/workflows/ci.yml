@@ -1,6 +1,3 @@
-
-Insiders
-
 name: ci 
 on:
   push:
