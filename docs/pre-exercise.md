@@ -27,10 +27,7 @@ Follow the instructions below if you do not have an installed version from a pre
 
 ### Combine v9 - recommended version
 
-The nominal installation method is inside CMSSW. The current release targets
-CMSSW `11_3_X` series because this release has both python2 and python3 ROOT
-bindings, allowing a more gradual migration of user code to python3. Combine is
-fully python3-compatible and can work also in 12_X releases.
+The installation method takes place inside CMSSW `11_3_X` .
 
 ```sh
 cmsrel CMSSW_11_3_4
