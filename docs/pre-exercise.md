@@ -11,6 +11,8 @@ python3 -m pip install --upgrade --upgrade-strategy eager --editable .
 python3 -m pip install "urllib3<2"
 ```
 
+(`<repository url>` can be `ssh://git@gitlab.cern.ch:7999/pepper/pepper.git` or  `https://gitlab.cern.ch/pepper/pepper.git` )
+
 To check that your installation of pepper is working, try running the following commands, which will run an example processor in debug mode. This can be run locally.
 
 ```sh
