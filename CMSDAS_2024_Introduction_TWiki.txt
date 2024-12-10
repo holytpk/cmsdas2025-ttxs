@@ -1,0 +1,44 @@
+-+ Introduction and first steps
+
+
+
+--+ Pepper basics
+
+We run Pepper by calling aprocessorfile. A processor file suited for a cross section measurement in the dilepton channel can be found in the root directory of the exercise repo asprocessor_ttxs_dilep.py. This file contains or calls the methods needed for the analysis workflow, e.g. lepton selection, ID scale factor application, etc.
+The processor file must be pointed to aconfigfile. This file contains everything from filepaths (both for inputs and scale factors) to lepton and jet kinematic selection cuts. If you want to tweak something in the analysis that does not alter the workflow, this should be the place to do it. The starting point for this exercise will be the fileinputs/2022/config_ttxs_dilep.hjson, which has already been set up in a usable state.
+To test the exercise processor and config files, you can run locally in debug mode with the command below.
+python3processor_ttxs_dilep.pyinputs/2022/config_ttxs_dilep.hjson-ooutputs/debug_test--statedataoutputs/debug_test/state.coffea-d
+The arguments we've provided are
+inputs/2022/config_ttxs_dilep.hjson: a required positional argument pointing to the config file-o outputs/debug_test: where to save the outputs--statedata outputs/debug_test/state.coffea: where to put the "state" file. This file keeps track of the different 'chunks' pepper runs on, allowing you to resume partially complete processor tasks.-d: run in debug mode, only processing one 'chunk' per sample. This allows you to check that the processor is working on all samples and even produce small outputs, but without needing to submit to condor or wait very long. We will use it a lot to avoid excessive use of computing resources!
+To-doRun the processor with the '-h' flags to see what other options are available
+
+--+ A quick look around
+
+Now that we know how to run a Pepper processor, let's take a look around the repo and see how things are organized into folders.
+inputs/: this folder houses the user inputs, such as config files and scale factors, that Pepper will read. It doesn't hold actual CMS data, but it does hold the files that point to that data. Changing things like pT cuts, lepton scale factor files, samples, and more can be done here.processor_ttxs_dilep.py: as we've mentioned, this is the main python script we will run. We will need to edit this to add new functionality to the analysis, such as new variables, new systematics, and new functionality in general.pepper/: this directory holds the Pepper source code, including the basic processor class from whichprocessor_ttxs_dilep.pyinherits some methods.scripts/: this directory holds several useful scripts, which can derive scale factors and weights, or create outputs and plots. When you want to do something outside of the main processing loop, it will be here.fit/: after we have processed the data, we will need to convert to combine datacards and perform a fit in a CMSSW computing environment. All of that takes place in this directory.
+
+--+ The config file
+
+Take a look at the main config file mentioned above,inputs/2022/config_ttxs_dilep.hjson. It is anhjsonfile, an extension of thejsonformat which allows for comment lines and works well for config files edited by humans. (morehere) Let's find the list of input files, and start there.
+You will see that it is divided into sections. You might want to scroll through them to get an idea of what is there. Some values and options can be specified, and files can be linked. For example, find the fieldsmuon_sfandelectron_sf, and you will see the filepaths to the early scale factors that the Oviedo CMS group derived specifically for this analysis!
+QuestionThe config file has a lot of information, and might seem a bit unwieldy when scrolling through it for the first time. What do you think are the advantages of having a config file like this in an analysis framework?
+Now let's focus specifically at the list of MC input files, where you will find files for
+tt¯dilepton decaysDrell-Yan Z→ℓℓdecaystt¯dilepton samples with the hdamp parameter varied (a systematic uncertainty we'll see again later)
+Drell-Yan samples contain two opposite sign leptons, and so they are a major background fortt¯analyses.
+QuestionLook at the directory where samples are stored. There are some samples we are not using. What process do you think contributes the most backround events among those with samples available?
+To-doAdd the new samples and re-run Pepper in debug mode. What happens? We may need to add some more information in the next section before proceeding!
+if you want to know more about the config file, take a look atconfig_documentation.mdin the repository's root directory.
+
+--+ Lumifactors and cross sections
+
+We need to normalize all MC samples based on their expected cross section and the integrated luminosity of our recorded data, in order to match their expected contribution. When using Pepper, the cross sections of each MC sample are provided in an hjson config file. The fileinputs/crosssections_13p6.hjsonalready has some of these values.
+Finding cross sections for CMS analyses is generally a mess. While it would seem straightforward to keep track of cross section values calculated at NNLO for a variety of physics processes, many MC samples are produced with kinematic cuts and restricted decays that make this tricky. TheXSDB toolis an attempt to help mitigate this, but not always the best source of cross section values.
+The besttt¯cross section values can be found on thett¯@ NNLO twiki
+QuestionThe config has files fortt¯events in the dilepton channel, but the value incrosssections_13p6.hjsonlooks suspicious! We should check it to be sure. Can you find corresponding cross section values for these on XSDB?
+QuestionThett¯@ NNLO twiki has the best value for the predicted inclusivett¯cross section at 13.6 TeV.What are the branching ratios fortt¯into dilepton and lepton+jets channels? (You can calculate this approximately by hand... but ultimately we want to use the most accurate value!)Using these branching ratios, what cross section values do you obtain? Are they different from XSDB?
+To-doAdd these cross section values to the hjson file. Are there any others missing from the file? If so, find them!
+Once you have the cross section values, you need to collect info about the number of events in the MC samples so that you can weight them to match, in total, the expected sample contribution. To do this, Pepper has a specific script. Try runningpython scripts/compute_mc_lumifactors.py -hto see the arguments for the script.
+The script can be used to produce a json file containing the lumifactors needed to correctly scale the MC samples.
+To-doReplace the "lumifactors" file in the config with a new one containing all samples, enabling the flag-pas it will be needed for handling PDF uncertainties later. Afterwards, run the processor in debug mode to make sure everything is working.
+Now we are ready to move on!
+
