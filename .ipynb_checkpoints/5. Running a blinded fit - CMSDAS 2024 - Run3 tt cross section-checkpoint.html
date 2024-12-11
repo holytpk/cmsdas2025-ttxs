@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0051)https://cmsdas-2024-ttxs.docs.cern.ch/pre-exercise/ -->
+<!-- saved from url=(0060)https://cmsdas-2024-ttxs.docs.cern.ch/exercise-05-asimovfit/ -->
 <html lang="en" class="js-focus-visible js" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
       
@@ -7,21 +7,21 @@
       
       
       
-        <link rel="canonical" href="https://cmsdas-2024-ttxs.docs.cern.ch/pre-exercise/">
+        <link rel="canonical" href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-05-asimovfit/">
       
       <link rel="icon" href="https://cmsdas-2024-ttxs.docs.cern.ch/assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
     
     
       
-        <title>Pre-exercise - CMSDAS 2024 - Run3 tt cross section</title>
+        <title>5. Running a blinded fit - CMSDAS 2024 - Run3 tt cross section</title>
       
     
     
-      <link rel="stylesheet" href="./Pre-exercise - CMSDAS 2024 - Run3 tt cross section_files/main.7a952b86.min.css">
+      <link rel="stylesheet" href="./5. Running a blinded fit - CMSDAS 2024 - Run3 tt cross section_files/main.7a952b86.min.css">
       
         
-        <link rel="stylesheet" href="./Pre-exercise - CMSDAS 2024 - Run3 tt cross section_files/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="./5. Running a blinded fit - CMSDAS 2024 - Run3 tt cross section_files/palette.cbb835fc.min.css">
         
       
       
@@ -33,7 +33,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-        <link rel="stylesheet" href="./Pre-exercise - CMSDAS 2024 - Run3 tt cross section_files/css">
+        <link rel="stylesheet" href="./5. Running a blinded fit - CMSDAS 2024 - Run3 tt cross section_files/css">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -230,6 +230,158 @@ mjx-assistive-mml {
 
 mjx-assistive-mml[display="block"] {
   width: 100% !important;
+}
+
+mjx-math {
+  display: inline-block;
+  text-align: left;
+  line-height: 0;
+  text-indent: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  font-size-adjust: none;
+  letter-spacing: normal;
+  border-collapse: collapse;
+  word-wrap: normal;
+  word-spacing: normal;
+  white-space: nowrap;
+  direction: ltr;
+  padding: 1px 0;
+}
+
+mjx-container[jax="CHTML"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="CHTML"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="CHTML"][display="true"] mjx-math {
+  padding: 0;
+}
+
+mjx-container[jax="CHTML"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="CHTML"][justify="right"] {
+  text-align: right;
+}
+
+mjx-mi {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-c {
+  display: inline-block;
+}
+
+mjx-utext {
+  display: inline-block;
+  padding: .75em 0 .2em 0;
+}
+
+mjx-mo {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-stretchy-h {
+  display: inline-table;
+  width: 100%;
+}
+
+mjx-stretchy-h > * {
+  display: table-cell;
+  width: 0;
+}
+
+mjx-stretchy-h > * > mjx-c {
+  display: inline-block;
+  transform: scalex(1.0000001);
+}
+
+mjx-stretchy-h > * > mjx-c::before {
+  display: inline-block;
+  width: initial;
+}
+
+mjx-stretchy-h > mjx-ext {
+  /* IE */ overflow: hidden;
+  /* others */ overflow: clip visible;
+  width: 100%;
+}
+
+mjx-stretchy-h > mjx-ext > mjx-c::before {
+  transform: scalex(500);
+}
+
+mjx-stretchy-h > mjx-ext > mjx-c {
+  width: 0;
+}
+
+mjx-stretchy-h > mjx-beg > mjx-c {
+  margin-right: -.1em;
+}
+
+mjx-stretchy-h > mjx-end > mjx-c {
+  margin-left: -.1em;
+}
+
+mjx-stretchy-v {
+  display: inline-block;
+}
+
+mjx-stretchy-v > * {
+  display: block;
+}
+
+mjx-stretchy-v > mjx-beg {
+  height: 0;
+}
+
+mjx-stretchy-v > mjx-end > mjx-c {
+  display: block;
+}
+
+mjx-stretchy-v > * > mjx-c {
+  transform: scaley(1.0000001);
+  transform-origin: left center;
+  overflow: hidden;
+}
+
+mjx-stretchy-v > mjx-ext {
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  border: 0px solid transparent;
+  /* IE */ overflow: hidden;
+  /* others */ overflow: visible clip;
+}
+
+mjx-stretchy-v > mjx-ext > mjx-c::before {
+  width: initial;
+  box-sizing: border-box;
+}
+
+mjx-stretchy-v > mjx-ext > mjx-c {
+  transform: scaleY(500) translateY(.075em);
+  overflow: visible;
+}
+
+mjx-mark {
+  display: inline-block;
+  height: 0px;
+}
+
+mjx-mn {
+  display: inline-block;
+  text-align: left;
 }
 
 mjx-c::before {
@@ -434,6 +586,26 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   font-family: MJXTEX-VB;
   src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
 }
+
+mjx-c.mjx-c1D45F.TEX-I::before {
+  padding: 0.442em 0.451em 0.011em 0;
+  content: "r";
+}
+
+mjx-c.mjx-c3D::before {
+  padding: 0.583em 0.778em 0.082em 0;
+  content: "=";
+}
+
+mjx-c.mjx-c31::before {
+  padding: 0.666em 0.5em 0 0;
+  content: "1";
+}
+
+mjx-c.mjx-c30::before {
+  padding: 0.666em 0.5em 0.022em 0;
+  content: "0";
+}
 </style></head>
   
   
@@ -456,7 +628,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
     <div data-md-component="skip">
       
         
-        <a href="https://cmsdas-2024-ttxs.docs.cern.ch/pre-exercise/#pre-requisites" class="md-skip">
+        <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-05-asimovfit/#performing-a-blinded-measurement" class="md-skip">
           Skip to content
         </a>
       
@@ -489,7 +661,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Pre-exercise
+              5. Running a blinded fit
             
           </span>
         </div>
@@ -588,7 +760,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="./index.html" title="CMSDAS 2024 - Run3 tt cross section" class="md-nav__button md-logo" aria-label="CMSDAS 2024 - Run3 tt cross section" data-md-component="logo">
+    <a href="https://cmsdas-2024-ttxs.docs.cern.ch/" title="CMSDAS 2024 - Run3 tt cross section" class="md-nav__button md-logo" aria-label="CMSDAS 2024 - Run3 tt cross section" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
@@ -619,7 +791,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   
   
     <li class="md-nav__item">
-      <a href="./index.html" class="md-nav__link">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/" class="md-nav__link">
         Home
       </a>
     </li>
@@ -632,21 +804,11 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./Pre-exercise - CMSDAS 2024 - Run3 tt cross section.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/pre-exercise/" class="md-nav__link">
         Pre-exercise
       </a>
-      
     </li>
   
 
@@ -685,7 +847,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   
   
     <li class="md-nav__item">
-      <a href="./0. Introduction - CMSDAS 2024 - Run3 tt cross section.html/" class="md-nav__link">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-00-intro/" class="md-nav__link">
         0. Introduction
       </a>
     </li>
@@ -699,7 +861,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   
   
     <li class="md-nav__item">
-      <a href="./1. Histograms + plots - CMSDAS 2024 - Run3 tt cross section.html/" class="md-nav__link">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-01-hists/" class="md-nav__link">
         1. Histograms + plots
       </a>
     </li>
@@ -713,7 +875,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   
   
     <li class="md-nav__item">
-      <a href="./2. Customize your analysis - CMSDAS 2024 - Run3 tt cross section.html/" class="md-nav__link">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-02-customization/" class="md-nav__link">
         2. Customize your analysis
       </a>
     </li>
@@ -747,12 +909,14 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4">
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked="">
       
       
       
@@ -775,7 +939,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   
   
     <li class="md-nav__item">
-      <a href="./4. Making datacards - CMSDAS 2024 - Run3 tt cross section.html/" class="md-nav__link">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-04-datacards/" class="md-nav__link">
         4. Making datacards
       </a>
     </li>
@@ -787,11 +951,73 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="./5. Running a blinded fit - CMSDAS 2024 - Run3 tt cross section.html/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          5. Running a blinded fit
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-05-asimovfit/" class="md-nav__link md-nav__link--active">
         5. Running a blinded fit
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-05-asimovfit/#switching-to-cmssw-environment-to-run-combine" class="md-nav__link">
+    Switching to CMSSW environment to run combine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-05-asimovfit/#converting-datacards-to-workspaces" class="md-nav__link">
+    Converting datacards to workspaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-05-asimovfit/#running-a-fit" class="md-nav__link">
+    Running a fit
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-05-asimovfit/#impact-plots-the-cms-standard" class="md-nav__link">
+    Impact plots: the CMS standard
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -803,7 +1029,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   
   
     <li class="md-nav__item">
-      <a href="./6. Understanding the fit - CMSDAS 2024 - Run3 tt cross section.html/" class="md-nav__link">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-06-fitstudies/" class="md-nav__link">
         6. Understanding the fit
       </a>
     </li>
@@ -817,7 +1043,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   
   
     <li class="md-nav__item">
-      <a href="./7. Fitting on Data - CMSDAS 2024 - Run3 tt cross section.html/" class="md-nav__link">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-07-datafit/" class="md-nav__link">
         7. Fitting on Data
       </a>
     </li>
@@ -865,7 +1091,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   
   
     <li class="md-nav__item">
-      <a href="./7. Fitting on Data - CMSDAS 2024 - Run3 tt cross section.html/" class="md-nav__link">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-08-optional/" class="md-nav__link">
         More studies
       </a>
     </li>
@@ -887,7 +1113,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   
   
     <li class="md-nav__item">
-      <a href="./Computing tips & tricks - CMSDAS 2024 - Run3 tt cross section.html/" class="md-nav__link">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/tips/" class="md-nav__link">
         Computing tips &amp; tricks
       </a>
     </li>
@@ -914,6 +1140,42 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-05-asimovfit/#switching-to-cmssw-environment-to-run-combine" class="md-nav__link">
+    Switching to CMSSW environment to run combine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-05-asimovfit/#converting-datacards-to-workspaces" class="md-nav__link">
+    Converting datacards to workspaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-05-asimovfit/#running-a-fit" class="md-nav__link">
+    Running a fit
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-05-asimovfit/#impact-plots-the-cms-standard" class="md-nav__link">
+    Impact plots: the CMS standard
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -926,78 +1188,86 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                 
                   
 
-  <a href="./Computing tips & tricks - CMSDAS 2024 - Run3 tt cross section.html/" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://gitlab.cern.ch/eranken/cmsdas-2024-pages/edit/master/docs/exercise-05-asimovfit.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
   </a>
 
 
-<h1 id="pre-requisites">Pre-requisites</h1>
-<p>There are two installs needed to complete the work in the exercise.</p>
-<h1 id="installing-pepper">Installing Pepper</h1>
-<p>Install Pepper:</p>
-<p>We have a special fork of the Pepper analysis framework made for this exercise, which can be found at <a href="https://gitlab.cern.ch/cmsdas-cern-2024/long-ex-top-xsec">https://gitlab.cern.ch/cmsdas-cern-2024/long-ex-top-xsec</a></p>
+<h1 id="performing-a-blinded-measurement">Performing a blinded measurement</h1>
+<p>In most analyses, it is typical to have some sort of blinding procedure in place. Analyzers will run their fit on Asimov/Simulated data and perform a number of studies before looking at data in the signal region. When you first fit on the real data, this is called unblinding. In most cases, you want to be confident in your setup before doing this.</p>
+<p>We will start with a "blinded" fit.</p>
+<h2 id="switching-to-cmssw-environment-to-run-combine">Switching to CMSSW environment to run combine</h2>
+<p>We will now perform the fit on the datacards we have generated. To do this, you'll want to start a new LXPLUS session and source your CMSSW/combine environment.</p>
+<p>To do this, you can go to your CMSSW directory, enter the <code>src</code> dir, and run <code>cmsenv</code>.</p>
+<p>If you want to set up a bash script that does this for you with a single command, you can create something like the following:</p>
+<p><code>setup_combine.sh</code>:
+</p><div class="highlight"><pre id="__code_1"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_1 &gt; code"></button><code><span class="ch">#!/bin/bash</span>
+<span class="nb">source</span><span class="w"> </span>/cvmfs/cms.cern.ch/cmsset_default.sh
+<span class="nb">cd</span><span class="w"> </span>&lt;PATH/TO/CMSSW&gt;/src/
+<span class="nb">eval</span><span class="w"> </span><span class="sb">`</span>scramv1<span class="w"> </span>runtime<span class="w"> </span>-sh<span class="sb">`</span>
+<span class="nb">cd</span><span class="w"> </span>-
+</code></pre></div>
+Then running this shell script will have the same effect. to verify your environment is ok, you can try running <code>combine -h</code> and <code>combineTool.py -h</code><p></p>
+<h2 id="converting-datacards-to-workspaces">Converting datacards to workspaces</h2>
+<p>Combine takes datacards as inputs, but has an intermediate format called a <em>workspace</em> stored in a root file. </p>
+<p>Let's get ready to do a fit. </p>
+<div class="admonition to-do">
+<p class="admonition-title">To-do</p>
+<p>Go to the directory with your datacards. Use the combineTool to create a workspace in a new directory, <code>first_fit</code>:</p>
+<div class="highlight"><pre id="__code_2"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_2 &gt; code"></button><code>mkdir<span class="w"> </span>first_fit
+combineTool.py<span class="w"> </span>-M<span class="w"> </span>T2W<span class="w"> </span>-i<span class="w"> </span>all.txt<span class="w"> </span>-o<span class="w"> </span>first_fit/workspace_all.root
+</code></pre></div>
+</div>
+<p>Now, go to the new directory with the workspace and we will be ready to run our first fit.</p>
+<h2 id="running-a-fit">Running a fit</h2>
+<p>The first thing we usually do in a CMS measurement is to fit on the <em>Asimov dataset</em>. This is just a fancy name for the expected dataset based on simulation. It tells us how our fit <em>should</em> look if our recorded data exactly matches our simulation.</p>
+<p>In many cases, analyses are kept <em>blinded</em> until they are very mature, meaning they can <em>only</em> fit on Asimov data or on certain regions of their event space where they do not derive their main sensitivity. This is to prevent the bad scientific practice of altering a measurement strategy to get a desired result. In principle, one should generally decide on the fitting methods before measuring the data, perform rigorous vetting of the fit techniques, and accept the result that is given.</p>
+<p>We will use a maximum likelihood fit based via the <code>FitDiagnostics</code> in combine. Specifying Asimov data should be used instead of real data is done by passing the option <code>-t -1</code>. Because we are running a fit in which signal is an expected standard model process, we should also include the option <code>--expectSignal=1</code>. Let's run a very simple fit</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Combine, by default, fits a parameter of interest <span class="arithmatex"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="0" style="font-size: 119.6%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45F TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="3" style="font-size: 119.5%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45F TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>r</mi></math></mjx-assistive-mml></mjx-container></mjx-assistive-mml></mjx-container></span>. This is generally interpreted as a signal strength modifier--for rates of standard model processes, the expectation is <span class="arithmatex"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="1" style="font-size: 119.6%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45F TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="4" style="font-size: 119.5%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45F TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>r</mi><mo>=</mo><mn>1</mn></math></mjx-assistive-mml></mjx-container></mjx-assistive-mml></mjx-container></span>. In BSM searches, one could look for a process where the null hypothesis is <span class="arithmatex"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="2" style="font-size: 119.6%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45F TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="5" style="font-size: 119.5%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45F TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>r</mi><mo>=</mo><mn>0</mn></math></mjx-assistive-mml></mjx-container></mjx-assistive-mml></mjx-container></span>. </p>
+<p>One can change the underlying model in combine to fit other more complicated parameters, but this basic case suits our needs for a cross section measurement.</p>
+</div>
+<div class="admonition to-do">
+<p class="admonition-title">To-do</p>
+<p>Try running the simple fit command:
+</p><div class="highlight"><pre id="__code_3"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_3 &gt; code"></button><code>combine<span class="w"> </span>-M<span class="w"> </span>FitDiagnostics<span class="w"> </span>-d<span class="w"> </span>workspace_all.root<span class="w"> </span>-t<span class="w"> </span>-1<span class="w"> </span>--expectSignal<span class="o">=</span><span class="m">1</span>
+</code></pre></div>
+What does the result tell you? An output root file has been created with the name <code>fitDianosticsTest.root</code>. Take a look at this file, can you make sense of anything in it?<p></p>
+</div>
+<p>Let's run again <code>combine -h</code> and see that there are a massive amount of flags which can be provided at runtime. They are sorted by method, so let's skim through the general ones and those pertaining to <code>FitDiagnostics</code></p>
+<div class="admonition to-do">
+<p class="admonition-title">To-do</p>
+<p>Let's run the fit again with some more options provided to combine:</p>
+<ul>
+<li><code>--saveNLL --saveNormalizations --saveShapes --saveWithUncertainties</code> : this will more information in the output root file.</li>
+</ul>
+<p>Now take a look at the fit directory and outputs. What has changed?</p>
+</div>
+<h2 id="impact-plots-the-cms-standard">Impact plots: the CMS standard</h2>
+<p>One of the main ways CMS analyses understand and evaluate the likelihood fit result is by looking at plots of the nuisance parameter <em>impacts and pulls</em>. </p>
+<p>These show us how much each nuisance parameter affects the fit result (impacts), what the best-fit values for nuisance parameters are (pulls), and whether the pre-fit uncertainties we place on these nuisances are constrained in the fit (uncertainty bands on pulls).</p>
+<p>In CMS, there is a very standardized way of plotting this information with a few methods from <code>combineTool.py</code>.</p>
+<div class="admonition to-do">
+<p class="admonition-title">To-do</p>
+<p>Let's generate these plots for a fit on Asimov data. This is done in 4 steps:</p>
 <ol>
-<li>checkout the exercise pepper repo (master branch!) and setup an basic environment (LCG 104)
-<div class="highlight"><pre id="__code_1"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_1 &gt; code"></button><code>git<span class="w"> </span>clone<span class="w"> </span>&lt;repository<span class="w"> </span>url&gt;<span class="w"> </span>pepper
-<span class="nb">cd</span><span class="w"> </span>pepper
-<span class="nb">source</span><span class="w"> </span>example/environment.sh
+<li>Run an initial fit and save the output including all post-fit nuisance parameter values in a workspace:
+<div class="highlight"><pre id="__code_4"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_4 &gt; code"></button><code>combineTool.py<span class="w"> </span>-M<span class="w"> </span>Impacts<span class="w"> </span>-d<span class="w"> </span>workspace_all.root<span class="w"> </span>-t<span class="w"> </span>-1<span class="w"> </span>--expectSignal<span class="o">=</span><span class="m">1</span><span class="w"> </span>-m<span class="w"> </span><span class="m">125</span><span class="w"> </span>--doInitialFit<span class="w"> </span>
 </code></pre></div></li>
-<li>make a python venv
-<div class="highlight"><pre id="__code_2"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_2 &gt; code"></button><code>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>env_pepper
-<span class="nb">source</span><span class="w"> </span>env_pepper/bin/activate
-<span class="nb">export</span><span class="w"> </span><span class="nv">PYTHONPATH</span><span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/env_pepper/lib/python3.9/site-packages
+<li>Run several fits, one with each nuisance parameter varied up and down from it's best-fit value by its post-fit uncertainty.
+<div class="highlight"><pre id="__code_5"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_5 &gt; code"></button><code tabindex="0">combineTool.py<span class="w"> </span>-M<span class="w"> </span>Impacts<span class="w"> </span>-d<span class="w"> </span>workspace_all.root<span class="w"> </span>--doFits<span class="w"> </span>-t<span class="w"> </span>-1<span class="w"> </span>--expectSignal<span class="o">=</span><span class="m">1</span><span class="w"> </span>-m<span class="w"> </span><span class="m">125</span><span class="w"> </span>--parallel<span class="w"> </span><span class="m">20</span>
 </code></pre></div></li>
-<li>install pepper and required packages using pip
-<div class="highlight"><pre id="__code_3"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_3 &gt; code"></button><code>python<span class="w"> </span>-m<span class="w"> </span>ensurepip<span class="w"> </span>--upgrade
-python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>pip_requirements.txt
-python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade-strategy<span class="w"> </span>only-if-needed<span class="w"> </span>--editable<span class="w"> </span>.
+<li>Collect the information from all of the fits into a <code>.json</code> file
+<div class="highlight"><pre id="__code_6"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_6 &gt; code"></button><code>combineTool.py<span class="w"> </span>-m<span class="w"> </span><span class="m">125</span><span class="w"> </span>-M<span class="w"> </span>Impacts<span class="w"> </span>-o<span class="w"> </span>impacts_asimov.json<span class="w"> </span>-d<span class="w"> </span>workspace_all.root
 </code></pre></div></li>
+<li>Make a nice plot using the <code>json</code> file.
+<div class="highlight"><pre id="__code_7"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_7 &gt; code"></button><code>plotImpacts.py<span class="w"> </span>-i<span class="w"> </span>impacts_asimov.json<span class="w"> </span>-o<span class="w"> </span>impacts_asimov<span class="w">   </span>
+</code></pre></div>
+Finally, take a look at the newly-created file impacts_asimov.pdf. Which systematic uncertainties have the highest expected impact on the POI? Are any of them expected to be constrained by the fit?</li>
 </ol>
-<p>(<code>&lt;repository url&gt;</code> can be <code>ssh://git@gitlab.cern.ch:7999/cmsdas-cern-2024/long-ex-top-xsec.git</code> or <code>https://gitlab.cern.ch/cmsdas-cern-2024/long-ex-top-xsec.git</code> )</p>
-<p>Note that the last command installs pepper as an editable module. This means that any changes you make to the pepper code will take effect the next time you call <code>import pepper</code> in a python script.</p>
-<p>To check that your installation of pepper is working, try running the following commands, which will run a quick test processor in debug mode.</p>
-<div class="highlight"><pre id="__code_4"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_4 &gt; code"></button><code><span class="nb">cd</span><span class="w"> </span>example
-python3<span class="w"> </span>-m<span class="w"> </span>pepper.runproc<span class="w"> </span>example_processor.py<span class="w"> </span>test_config.hjson<span class="w"> </span>-d
-</code></pre></div>
-<div class="admonition environment">
-<p class="admonition-title">Environment</p>
-<p>when logging into a new session, we want to setup the environment again as quickly as possible, and set some variables for access to grid resources.
-Copy the setup script to a personal file not tracked by git, e.g. <code>cp example/environment.sh my_environment.sh</code>. Open it and you will find some lines that will point to the python env you just made--add your pepper repo directory and uncomment them.</p>
-<p>Now, when you start a new session, you can go to your repo's base directory and run
-</p><div class="highlight"><pre id="__code_5"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_5 &gt; code"></button><code><span class="nb">source</span><span class="w"> </span>my_environment.sh
-</code></pre></div>
-to be fully set up to run pepper. This environment setup script will also need to be passed along to condor for batch submission.<p></p>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>in this setup, we will give priority to packages installed in your python venv, while also continuing to include packages from your user installation and LCG locatable via your PYTHONPATH variable. This should allow you to mess around in PyROOT, or use other common packages, without needing to start a new session. But if you run into any environment troubles, ping a facilitator!</p>
-</div>
-<h1 id="installing-combine">Installing combine</h1>
-<p>We don't really "use CMSSW" in this exercise, but we use the standard CMS statistical fitting tool combine, which is usually installed within a CMSSW environment.
-Follow the instructions below if you do not have an installed version from a previous exercise. This should be done in a fresh LXplus session.</p>
-<h3 id="combine-v10-brand-new-version-for-el9-machines">Combine v10 - brand new version! (for el9 machines)</h3>
-<p>The installation method takes place inside CMSSW <code>CMSSW_14_1_0_pre4</code> .</p>
-<div class="highlight"><pre id="__code_6"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_6 &gt; code"></button><code tabindex="0"><span class="nb">source</span><span class="w"> </span>/cvmfs/cms.cern.ch/cmsset_default.sh
-cmsrel<span class="w"> </span>CMSSW_14_1_0_pre4
-<span class="nb">cd</span><span class="w"> </span>CMSSW_14_1_0_pre4/src
-cmsenv
-git<span class="w"> </span>clone<span class="w"> </span>https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git<span class="w"> </span>HiggsAnalysis/CombinedLimit
-<span class="nb">cd</span><span class="w"> </span>HiggsAnalysis/CombinedLimit
-git<span class="w"> </span>fetch<span class="w"> </span>origin
-git<span class="w"> </span>checkout<span class="w"> </span>v10.0.0
-scramv1<span class="w"> </span>b<span class="w"> </span>clean<span class="p">;</span><span class="w"> </span>scramv1<span class="w"> </span>b<span class="w"> </span>-j<span class="w"> </span><span class="m">8</span>
-</code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You will want to use a separate terminal to run combine due to the many environment variables set by using CMSSW. When logging into a new session, go back to your CMSSW install directory and run:
-</p><div class="highlight"><pre id="__code_7"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_7 &gt; code"></button><code><span class="nb">cd</span><span class="w"> </span>src/
-cmsenv
-</code></pre></div>
-and you can then run combine.<p></p>
-</div>
-<h3 id="combineharvester">CombineHarvester</h3>
-<p>As of v10, the "CombineTool" scripts needed to make impact plots are included in the main <code>combine</code> installation, so a separate installation of CombineHarvester is not needed for this exercise. Currently, if you want to use CombineHarvester for its other features beyond those provided in the "combineTool" scripts, you will need to run it using a container (el7 or similar)</p>
 
 
 
@@ -1018,7 +1288,7 @@ and you can then run combine.<p></p>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="./index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+        <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-04-datacards/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 4. Making datacards" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
           </div>
@@ -1027,20 +1297,20 @@ and you can then run combine.<p></p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Home
+              4. Making datacards
             </div>
           </div>
         </a>
       
       
         
-        <a href="./0. Introduction - CMSDAS 2024 - Run3 tt cross section.html/" class="md-footer__link md-footer__link--next" aria-label="Next: 0. Introduction" rel="next">
+        <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-06-fitstudies/" class="md-footer__link md-footer__link--next" aria-label="Next: 6. Understanding the fit" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              0. Introduction
+              6. Understanding the fit
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1074,13 +1344,13 @@ and you can then run combine.<p></p>
     <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="./Pre-exercise - CMSDAS 2024 - Run3 tt cross section_files/bundle.37e9125f.min.js.下載"></script>
+      <script src="./5. Running a blinded fit - CMSDAS 2024 - Run3 tt cross section_files/bundle.37e9125f.min.js.下載"></script>
       
-        <script src="./Pre-exercise - CMSDAS 2024 - Run3 tt cross section_files/mathjax.js.下載"></script>
+        <script src="./5. Running a blinded fit - CMSDAS 2024 - Run3 tt cross section_files/mathjax.js.下載"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
-        <script src="./Pre-exercise - CMSDAS 2024 - Run3 tt cross section_files/tex-mml-chtml.js.下載"></script>
+        <script src="./5. Running a blinded fit - CMSDAS 2024 - Run3 tt cross section_files/tex-mml-chtml.js.下載"></script>
       
     
   

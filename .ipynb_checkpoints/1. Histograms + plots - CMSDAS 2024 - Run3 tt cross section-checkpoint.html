@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0051)https://cmsdas-2024-ttxs.docs.cern.ch/pre-exercise/ -->
+<!-- saved from url=(0056)https://cmsdas-2024-ttxs.docs.cern.ch/exercise-01-hists/ -->
 <html lang="en" class="js-focus-visible js" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
       
@@ -7,21 +7,21 @@
       
       
       
-        <link rel="canonical" href="https://cmsdas-2024-ttxs.docs.cern.ch/pre-exercise/">
+        <link rel="canonical" href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-01-hists/">
       
       <link rel="icon" href="https://cmsdas-2024-ttxs.docs.cern.ch/assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
     
     
       
-        <title>Pre-exercise - CMSDAS 2024 - Run3 tt cross section</title>
+        <title>1. Histograms + plots - CMSDAS 2024 - Run3 tt cross section</title>
       
     
     
-      <link rel="stylesheet" href="./Pre-exercise - CMSDAS 2024 - Run3 tt cross section_files/main.7a952b86.min.css">
+      <link rel="stylesheet" href="./1. Histograms + plots - CMSDAS 2024 - Run3 tt cross section_files/main.7a952b86.min.css">
       
         
-        <link rel="stylesheet" href="./Pre-exercise - CMSDAS 2024 - Run3 tt cross section_files/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="./1. Histograms + plots - CMSDAS 2024 - Run3 tt cross section_files/palette.cbb835fc.min.css">
         
       
       
@@ -33,7 +33,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-        <link rel="stylesheet" href="./Pre-exercise - CMSDAS 2024 - Run3 tt cross section_files/css">
+        <link rel="stylesheet" href="./1. Histograms + plots - CMSDAS 2024 - Run3 tt cross section_files/css">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -230,6 +230,65 @@ mjx-assistive-mml {
 
 mjx-assistive-mml[display="block"] {
   width: 100% !important;
+}
+
+mjx-math {
+  display: inline-block;
+  text-align: left;
+  line-height: 0;
+  text-indent: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  font-size-adjust: none;
+  letter-spacing: normal;
+  border-collapse: collapse;
+  word-wrap: normal;
+  word-spacing: normal;
+  white-space: nowrap;
+  direction: ltr;
+  padding: 1px 0;
+}
+
+mjx-container[jax="CHTML"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="CHTML"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="CHTML"][display="true"] mjx-math {
+  padding: 0;
+}
+
+mjx-container[jax="CHTML"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="CHTML"][justify="right"] {
+  text-align: right;
+}
+
+mjx-msub {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-mi {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-c {
+  display: inline-block;
+}
+
+mjx-utext {
+  display: inline-block;
+  padding: .75em 0 .2em 0;
 }
 
 mjx-c::before {
@@ -434,6 +493,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   font-family: MJXTEX-VB;
   src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
 }
+
+mjx-c.mjx-c1D45D.TEX-I::before {
+  padding: 0.442em 0.503em 0.194em 0;
+  content: "p";
+}
+
+mjx-c.mjx-c1D447.TEX-I::before {
+  padding: 0.677em 0.704em 0 0;
+  content: "T";
+}
 </style></head>
   
   
@@ -456,7 +525,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
     <div data-md-component="skip">
       
         
-        <a href="https://cmsdas-2024-ttxs.docs.cern.ch/pre-exercise/#pre-requisites" class="md-skip">
+        <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-01-hists/#histograms-and-plotting-basics" class="md-skip">
           Skip to content
         </a>
       
@@ -489,7 +558,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Pre-exercise
+              1. Histograms + plots
             
           </span>
         </div>
@@ -588,7 +657,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="./index.html" title="CMSDAS 2024 - Run3 tt cross section" class="md-nav__button md-logo" aria-label="CMSDAS 2024 - Run3 tt cross section" data-md-component="logo">
+    <a href="https://cmsdas-2024-ttxs.docs.cern.ch/" title="CMSDAS 2024 - Run3 tt cross section" class="md-nav__button md-logo" aria-label="CMSDAS 2024 - Run3 tt cross section" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
@@ -619,7 +688,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   
   
     <li class="md-nav__item">
-      <a href="./index.html" class="md-nav__link">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/" class="md-nav__link">
         Home
       </a>
     </li>
@@ -632,21 +701,11 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./Pre-exercise - CMSDAS 2024 - Run3 tt cross section.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/pre-exercise/" class="md-nav__link">
         Pre-exercise
       </a>
-      
     </li>
   
 
@@ -657,12 +716,14 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3">
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked="">
       
       
       
@@ -685,7 +746,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   
   
     <li class="md-nav__item">
-      <a href="./0. Introduction - CMSDAS 2024 - Run3 tt cross section.html/" class="md-nav__link">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-00-intro/" class="md-nav__link">
         0. Introduction
       </a>
     </li>
@@ -697,11 +758,73 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="./1. Histograms + plots - CMSDAS 2024 - Run3 tt cross section.html/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          1. Histograms + plots
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-01-hists/" class="md-nav__link md-nav__link--active">
         1. Histograms + plots
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-01-hists/#output-formats" class="md-nav__link">
+    Output formats
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-01-hists/#plotting-the-outputs" class="md-nav__link">
+    Plotting the outputs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-01-hists/#adding-more-histograms" class="md-nav__link">
+    Adding more histograms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-01-hists/#plots-with-full-sample-statistics" class="md-nav__link">
+    Plots with full sample statistics
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -713,7 +836,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   
   
     <li class="md-nav__item">
-      <a href="./2. Customize your analysis - CMSDAS 2024 - Run3 tt cross section.html/" class="md-nav__link">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-02-customization/" class="md-nav__link">
         2. Customize your analysis
       </a>
     </li>
@@ -775,7 +898,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   
   
     <li class="md-nav__item">
-      <a href="./4. Making datacards - CMSDAS 2024 - Run3 tt cross section.html/" class="md-nav__link">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-04-datacards/" class="md-nav__link">
         4. Making datacards
       </a>
     </li>
@@ -789,7 +912,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   
   
     <li class="md-nav__item">
-      <a href="./5. Running a blinded fit - CMSDAS 2024 - Run3 tt cross section.html/" class="md-nav__link">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-05-asimovfit/" class="md-nav__link">
         5. Running a blinded fit
       </a>
     </li>
@@ -803,7 +926,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   
   
     <li class="md-nav__item">
-      <a href="./6. Understanding the fit - CMSDAS 2024 - Run3 tt cross section.html/" class="md-nav__link">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-06-fitstudies/" class="md-nav__link">
         6. Understanding the fit
       </a>
     </li>
@@ -817,7 +940,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   
   
     <li class="md-nav__item">
-      <a href="./7. Fitting on Data - CMSDAS 2024 - Run3 tt cross section.html/" class="md-nav__link">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-07-datafit/" class="md-nav__link">
         7. Fitting on Data
       </a>
     </li>
@@ -865,7 +988,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   
   
     <li class="md-nav__item">
-      <a href="./7. Fitting on Data - CMSDAS 2024 - Run3 tt cross section.html/" class="md-nav__link">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-08-optional/" class="md-nav__link">
         More studies
       </a>
     </li>
@@ -887,7 +1010,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   
   
     <li class="md-nav__item">
-      <a href="./Computing tips & tricks - CMSDAS 2024 - Run3 tt cross section.html/" class="md-nav__link">
+      <a href="https://cmsdas-2024-ttxs.docs.cern.ch/tips/" class="md-nav__link">
         Computing tips &amp; tricks
       </a>
     </li>
@@ -914,6 +1037,42 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc">
+      
+        <li class="md-nav__item">
+  <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-01-hists/#output-formats" class="md-nav__link">
+    Output formats
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-01-hists/#plotting-the-outputs" class="md-nav__link">
+    Plotting the outputs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-01-hists/#adding-more-histograms" class="md-nav__link">
+    Adding more histograms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-01-hists/#plots-with-full-sample-statistics" class="md-nav__link">
+    Plots with full sample statistics
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -926,78 +1085,98 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                 
                   
 
-  <a href="./Computing tips & tricks - CMSDAS 2024 - Run3 tt cross section.html/" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://gitlab.cern.ch/eranken/cmsdas-2024-pages/edit/master/docs/exercise-01-hists.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
   </a>
 
 
-<h1 id="pre-requisites">Pre-requisites</h1>
-<p>There are two installs needed to complete the work in the exercise.</p>
-<h1 id="installing-pepper">Installing Pepper</h1>
-<p>Install Pepper:</p>
-<p>We have a special fork of the Pepper analysis framework made for this exercise, which can be found at <a href="https://gitlab.cern.ch/cmsdas-cern-2024/long-ex-top-xsec">https://gitlab.cern.ch/cmsdas-cern-2024/long-ex-top-xsec</a></p>
-<ol>
-<li>checkout the exercise pepper repo (master branch!) and setup an basic environment (LCG 104)
-<div class="highlight"><pre id="__code_1"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_1 &gt; code"></button><code>git<span class="w"> </span>clone<span class="w"> </span>&lt;repository<span class="w"> </span>url&gt;<span class="w"> </span>pepper
-<span class="nb">cd</span><span class="w"> </span>pepper
-<span class="nb">source</span><span class="w"> </span>example/environment.sh
-</code></pre></div></li>
-<li>make a python venv
-<div class="highlight"><pre id="__code_2"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_2 &gt; code"></button><code>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>env_pepper
-<span class="nb">source</span><span class="w"> </span>env_pepper/bin/activate
-<span class="nb">export</span><span class="w"> </span><span class="nv">PYTHONPATH</span><span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/env_pepper/lib/python3.9/site-packages
-</code></pre></div></li>
-<li>install pepper and required packages using pip
-<div class="highlight"><pre id="__code_3"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_3 &gt; code"></button><code>python<span class="w"> </span>-m<span class="w"> </span>ensurepip<span class="w"> </span>--upgrade
-python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>pip_requirements.txt
-python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade-strategy<span class="w"> </span>only-if-needed<span class="w"> </span>--editable<span class="w"> </span>.
-</code></pre></div></li>
-</ol>
-<p>(<code>&lt;repository url&gt;</code> can be <code>ssh://git@gitlab.cern.ch:7999/cmsdas-cern-2024/long-ex-top-xsec.git</code> or <code>https://gitlab.cern.ch/cmsdas-cern-2024/long-ex-top-xsec.git</code> )</p>
-<p>Note that the last command installs pepper as an editable module. This means that any changes you make to the pepper code will take effect the next time you call <code>import pepper</code> in a python script.</p>
-<p>To check that your installation of pepper is working, try running the following commands, which will run a quick test processor in debug mode.</p>
-<div class="highlight"><pre id="__code_4"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_4 &gt; code"></button><code><span class="nb">cd</span><span class="w"> </span>example
-python3<span class="w"> </span>-m<span class="w"> </span>pepper.runproc<span class="w"> </span>example_processor.py<span class="w"> </span>test_config.hjson<span class="w"> </span>-d
+<h1 id="histograms-and-plotting-basics">Histograms and Plotting basics</h1>
+<h2 id="output-formats">Output formats</h2>
+<p>Now that we have all our samples and the lumi weights set up, let's take a look at what Pepper outputs. You can run in debug mode for starters.</p>
+<p>By default, Pepper will save hists in the <a href="https://hist.readthedocs.io/en/latest/user-guide/notebooks/Histogram.html">hist.Hist</a> format, allowing for easy integration with the scikit-hep ecosystem. However, it is also possible to export to ROOT files+histograms. This is done by pointing one of the Pepper scripts to your Pepper state file:</p>
+<div class="highlight"><pre id="__code_1"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_1 &gt; code"></button><code tabindex="0">python<span class="w"> </span>scripts/export_hists_from_state.py<span class="w"> </span>&lt;input_path&gt;/state.coffea<span class="w"> </span>root<span class="w"> </span>&lt;output_path&gt;
 </code></pre></div>
-<div class="admonition environment">
-<p class="admonition-title">Environment</p>
-<p>when logging into a new session, we want to setup the environment again as quickly as possible, and set some variables for access to grid resources.
-Copy the setup script to a personal file not tracked by git, e.g. <code>cp example/environment.sh my_environment.sh</code>. Open it and you will find some lines that will point to the python env you just made--add your pepper repo directory and uncomment them.</p>
-<p>Now, when you start a new session, you can go to your repo's base directory and run
-</p><div class="highlight"><pre id="__code_5"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_5 &gt; code"></button><code><span class="nb">source</span><span class="w"> </span>my_environment.sh
-</code></pre></div>
-to be fully set up to run pepper. This environment setup script will also need to be passed along to condor for batch submission.<p></p>
+<p>These outputs can then be viewed via, for example, a TBrowser. </p>
+<div class="admonition to-do">
+<p class="admonition-title">To-do</p>
+<p>try taking a look at the outputs, either with a ROOT file viewer or natively in python. What do you see? Does it make sense?</p>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>in this setup, we will give priority to packages installed in your python venv, while also continuing to include packages from your user installation and LCG locatable via your PYTHONPATH variable. This should allow you to mess around in PyROOT, or use other common packages, without needing to start a new session. But if you run into any environment troubles, ping a facilitator!</p>
-</div>
-<h1 id="installing-combine">Installing combine</h1>
-<p>We don't really "use CMSSW" in this exercise, but we use the standard CMS statistical fitting tool combine, which is usually installed within a CMSSW environment.
-Follow the instructions below if you do not have an installed version from a previous exercise. This should be done in a fresh LXplus session.</p>
-<h3 id="combine-v10-brand-new-version-for-el9-machines">Combine v10 - brand new version! (for el9 machines)</h3>
-<p>The installation method takes place inside CMSSW <code>CMSSW_14_1_0_pre4</code> .</p>
-<div class="highlight"><pre id="__code_6"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_6 &gt; code"></button><code tabindex="0"><span class="nb">source</span><span class="w"> </span>/cvmfs/cms.cern.ch/cmsset_default.sh
-cmsrel<span class="w"> </span>CMSSW_14_1_0_pre4
-<span class="nb">cd</span><span class="w"> </span>CMSSW_14_1_0_pre4/src
-cmsenv
-git<span class="w"> </span>clone<span class="w"> </span>https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git<span class="w"> </span>HiggsAnalysis/CombinedLimit
-<span class="nb">cd</span><span class="w"> </span>HiggsAnalysis/CombinedLimit
-git<span class="w"> </span>fetch<span class="w"> </span>origin
-git<span class="w"> </span>checkout<span class="w"> </span>v10.0.0
-scramv1<span class="w"> </span>b<span class="w"> </span>clean<span class="p">;</span><span class="w"> </span>scramv1<span class="w"> </span>b<span class="w"> </span>-j<span class="w"> </span><span class="m">8</span>
+<h2 id="plotting-the-outputs">Plotting the outputs</h2>
+<p>Ultimately, we want to see information about all the different samples displayed together. To do this, we use Pepper's plotting script, pointed at the output file <code>hists.json</code> which compiles information about the different saved histograms:</p>
+<div class="highlight"><pre id="__code_2"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_2 &gt; code"></button><code tabindex="0">python3<span class="w"> </span>scripts/plot_histograms.py<span class="w"> </span>&lt;config<span class="w"> </span>file&gt;<span class="w"> </span>&lt;processor_output_path&gt;/hists/hists.json
 </code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You will want to use a separate terminal to run combine due to the many environment variables set by using CMSSW. When logging into a new session, go back to your CMSSW install directory and run:
-</p><div class="highlight"><pre id="__code_7"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_7 &gt; code"></button><code><span class="nb">cd</span><span class="w"> </span>src/
-cmsenv
-</code></pre></div>
-and you can then run combine.<p></p>
+<p>You made need to add plotting information for the background samples we added ourselves earlier--choose a good plotting color for them!</p>
+<div class="admonition to-do">
+<p class="admonition-title">To-do</p>
+<p>Try running the plotting script on your outputs. What do they look like? Are the different samples visible?</p>
 </div>
-<h3 id="combineharvester">CombineHarvester</h3>
-<p>As of v10, the "CombineTool" scripts needed to make impact plots are included in the main <code>combine</code> installation, so a separate installation of CombineHarvester is not needed for this exercise. Currently, if you want to use CombineHarvester for its other features beyond those provided in the "combineTool" scripts, you will need to run it using a container (el7 or similar)</p>
+<h2 id="adding-more-histograms">Adding more histograms</h2>
+<p>Before we run on the full sample statistics, let's see how to add our own histograms. Histograms are defined in their own config file, located in the <code>inputs/</code> directory, which the main config file with point to. Actually, there can be more than one! It often helps to have a few different sets of hist configs for different scenarios.  The number of histograms will directly impact on the use of computing resources, so we might not want to generate <em>all</em> of the histograms <em>all</em> of the time.</p>
+<p>let's look at the first histogram in the config to see how they are defined:
+</p><div class="highlight"><pre id="__code_3"><span></span><button class="md-clipboard md-icon" title="Copy to clipboard" data-clipboard-target="#__code_3 &gt; code"></button><code><span class="s2">"1st_lep_pt"</span><span class="p">:</span>
+<span class="p">{</span>
+    <span class="s2">"bins"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"pt"</span><span class="p">,</span>
+            <span class="s2">"label"</span><span class="p">:</span> <span class="s2">"Leading lepton $p_{{</span><span class="se">\\</span><span class="s2">mathrm{{T}}}}$ (GeV)"</span><span class="p">,</span>
+            <span class="s2">"n_or_arr"</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+            <span class="s2">"lo"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="s2">"hi"</span><span class="p">:</span> <span class="mi">200</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="s2">"fill"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"pt"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">"Lepton"</span><span class="p">,</span>
+            <span class="s2">"pt"</span><span class="p">,</span>
+            <span class="p">{</span><span class="s2">"leading"</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="s2">"step_requirement"</span><span class="p">:</span> <span class="s2">"cut:Req lep p_T"</span>
+<span class="p">},</span>
+</code></pre></div><p></p>
+<p>This tells Pepper to save a histogram called <code>1st_lep_pt</code> in the output file. in the <code>"bins"</code> dict, we provide one or more histogram axes, each with a <code>name</code>, a nice <code>label</code> for displaying on plots, and a binning. the binning runs from <code>lo</code> to <code>hi</code>, with <code>n_or_arr</code> providing either a number for the quantity of uniform bins, or directly giving an array of bin edges if non-uniform binning is desired.</p>
+<p>Next, we tell Pepper what to <code>fill</code> this histogram with. In this case, <code>"pt":</code> tells us we are filling the axis named above, with data taken from the <code>"pt"</code> column of the <code>data["Lepton"]</code> array as defined in the processor. We then can pass a dict that explains to the histogrammer how to choose which values from the array are included--using the function <code>"leading"</code> lets us sort by <span class="arithmatex"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="0" style="font-size: 119.6%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="3" style="font-size: 119.5%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>p</mi><mi>T</mi></msub></math></mjx-assistive-mml></mjx-container></mjx-assistive-mml></mjx-container></span> and pick the first value.</p>
+<p>Lastly, Pepper processes events via a series of cuts, defined in the processor. If you only want a certain histogram to be stored after a certain point in the cut flow, you can specify this by setting the parameter <code>"step_requirement"</code>. </p>
+<div class="admonition to-do">
+<p class="admonition-title">To-do</p>
+<p>Try adding a few of your own histograms. Some suggestions are:</p>
+<ul>
+<li>lepton or jet phi</li>
+<li>MET </li>
+<li>a 2d histogram of first lepton <span class="arithmatex"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="1" style="font-size: 119.6%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="4" style="font-size: 119.5%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>p</mi><mi>T</mi></msub></math></mjx-assistive-mml></mjx-container></mjx-assistive-mml></mjx-container></span> vs second lepton <span class="arithmatex"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="2" style="font-size: 119.6%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="5" style="font-size: 119.5%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45D TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>p</mi><mi>T</mi></msub></math></mjx-assistive-mml></mjx-container></mjx-assistive-mml></mjx-container></span></li>
+<li>think of your own!</li>
+</ul>
+<p>Then, re-run in debug mode to see if the histogram was created successfully.</p>
+</div>
+<div class="admonition to-do">
+<p class="admonition-title">To-do</p>
+<p>Anything that is contained in the NanoAOD file can be retrieved in the processor or sometimes directly just by adding a histogram, but you will need to know how it is stored in NanoAOD. Take a look at the NanoAOD automatic self-documentation <a href="https://cms-nanoaod-integration.web.cern.ch/autoDoc/NanoAODv9/2018UL/doc_TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8_RunIISummer20UL18NanoAODv9-106X_upgrade2018_realistic_v16_L1v1-v1.html">here</a>.</p>
+<p>Later on we will look at pileup, the number of total interactions per bunch crossing in which a collision was recorded. One variable related to this is called "rho", and it measures the total energy flux through the detector at a given time. It can be calculated in different ways. </p>
+<p>Search for the following descriptions, and add histograms of their values from NanoAOD once you find the name of the leaf that contains them:</p>
+<ul>
+<li>Rho calculated from all calorimeter towers with |eta| &lt; 2.5</li>
+<li>Rho calculated from charged ParticleFlow candidates in the central region (tracker)"</li>
+</ul>
+<!-- TODO add these to hists.json in solved branch-->
+</div>
+<p>These histograms all use variables that are readily available from the processor or NanoAOD files. In the next section, we will see how to add our own variables and make histograms with them.</p>
+<h2 id="plots-with-full-sample-statistics">Plots with full sample statistics</h2>
+<p>Let's try one run on the full sample statistics, getting rid of the <code>-d</code> flag when running the processor. This is probably too lengthy to be done on your LXPLUS machine, so we will need to submit to condor. To save resources, one person can do this and share their output path!</p>
+<p>In order to submit to condor, one needs to add the following flags: </p>
+<ul>
+<li><code>-c &lt;N&gt;</code>: submit processor 'chunks' as condor jobs, spawning <n> jobs at a time. (500 should be reasonable) </n></li>
+<li><code>-i &lt;environment&gt;</code> environment for condor jobs to source (use your customized version of  <code>environment.sh</code> which should set the PYTHONPATH variable)</li>
+</ul>
+<p>It's a good idea to first run once passing the <code>-d</code> flag alongside these, and doing a test-run of any setup you want to send to condor. This will send a small number of jobs to condor, processing a single 'chunk' of each sample. This way, you can avoid accidentally sending many jobs which all fail.</p>
+<div class="admonition to-do">
+<p class="admonition-title">To-do</p>
+<p>Try the condor submission in debug mode. If that runs successfully, you can work together as a group to have a few people submit the full samples to be processed by condor jobs, and share the outputs. </p>
+</div>
+<div class="admonition to-do">
+<p class="admonition-title">To-do</p>
+<p>Once you have outputs available with the full sample statistics, re-run the plotting script. Take a look at the different histograms. How is the agreement? What might be missing that is causing any disagreement that you see?</p>
+</div>
 
 
 
@@ -1018,7 +1197,7 @@ and you can then run combine.<p></p>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="./index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+        <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-00-intro/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 0. Introduction" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
           </div>
@@ -1027,20 +1206,20 @@ and you can then run combine.<p></p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Home
+              0. Introduction
             </div>
           </div>
         </a>
       
       
         
-        <a href="./0. Introduction - CMSDAS 2024 - Run3 tt cross section.html/" class="md-footer__link md-footer__link--next" aria-label="Next: 0. Introduction" rel="next">
+        <a href="https://cmsdas-2024-ttxs.docs.cern.ch/exercise-02-customization/" class="md-footer__link md-footer__link--next" aria-label="Next: 2. Customize your analysis" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              0. Introduction
+              2. Customize your analysis
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1074,13 +1253,13 @@ and you can then run combine.<p></p>
     <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="./Pre-exercise - CMSDAS 2024 - Run3 tt cross section_files/bundle.37e9125f.min.js.下載"></script>
+      <script src="./1. Histograms + plots - CMSDAS 2024 - Run3 tt cross section_files/bundle.37e9125f.min.js.下載"></script>
       
-        <script src="./Pre-exercise - CMSDAS 2024 - Run3 tt cross section_files/mathjax.js.下載"></script>
+        <script src="./1. Histograms + plots - CMSDAS 2024 - Run3 tt cross section_files/mathjax.js.下載"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
-        <script src="./Pre-exercise - CMSDAS 2024 - Run3 tt cross section_files/tex-mml-chtml.js.下載"></script>
+        <script src="./1. Histograms + plots - CMSDAS 2024 - Run3 tt cross section_files/tex-mml-chtml.js.下載"></script>
       
     
   
