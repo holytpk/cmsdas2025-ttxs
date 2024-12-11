@@ -1,0 +1,5 @@
+site_name: PODAS
+nav:
+  - Home: index.md
+  - Pre-exercise: pre-exercise.md
+theme: readthedocs
